@@ -29,7 +29,10 @@ const SignupForm = () => {
 
   return (
     <div className="signup-container">
-      <h2>Signup for Accessories Rental</h2>
+      <div className="signup-header">
+        <img src="/assets/images/logo.png" alt="Logo" className="signup-logo" />
+        <h2>Signup for Accessories Rental</h2>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="name">Full Name</label>

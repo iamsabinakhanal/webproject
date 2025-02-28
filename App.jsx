@@ -1,23 +1,32 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Login from './components/public/Login';
 import Signup from './components/public/Signup';
-import Homepage from './components/private/Homepage';
-import Navbar from './components/private/Navbar';
+// import Navbar from './components/private/Navbar'; // Removed Navbar import
+import Dashboard from './components/private/Dashboard';
 import Footer from './components/private/Footer';
-import Content from './components/private/Content';
+import BagGallery from './components/private/Bag';
 
 function App() {
   return (
-    <Router> {/* Wrap everything inside BrowserRouter */}
+    <Router>
+      <Main />
+    </Router>
+  );
+}
+
+function Main() {
+  return (
+    <div>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Homepage />} />
-        <Route path="/navbar" element={<Navbar />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/content" element={<Content />} />
+        <Route path="/bag" element={<BagGallery/>}/>
       </Routes>
-    </Router>
+    </div>
   );
 }
 

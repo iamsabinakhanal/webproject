@@ -1,0 +1,131 @@
+/* Dashboard.css */
+
+/* Main container for the dashboard */
+.dashboard {
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f5f5f5; /* Slightly softer background color */
+  min-height: 100vh;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Horizontal box for the image */
+.image-box {
+  width: 100%;
+  max-width:1200px;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust height as needed */
+  margin-bottom: 40px; /* Space between the image and title */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover; /* Ensures the image fills the area without stretching */
+  border-radius: 10px; /* Slight rounding for the image */
+}
+
+/* Title of the dashboard */
+.dashboard h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-transform: uppercase; /* Adding a bit of emphasis with uppercase text */
+}
+
+/* Container for the boxes */
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for each individual box */
+.box {
+  background-color: #ffffff;
+  border-radius: 12px; /* Slightly more rounded corners */
+  padding: 30px; /* More padding for better spacing */
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Slightly larger shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 23%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  cursor: pointer; /* Indicating clickable elements */
+}
+
+/* Box hover effect */
+.box:hover {
+  transform: translateY(-8px); /* More noticeable hover effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Title inside each box */
+.box h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: capitalize; /* Capitalize only the first letter of each word */
+}
+
+/* Paragraph inside each box */
+.box p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.6;
+  font-weight: 300;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Specific colors for each category */
+.box:nth-child(1) h2 {
+  color: #ffd700; /* Gold */
+}
+
+.box:nth-child(2) h2 {
+  color: #b8b8b8; /* Softer Pearls color */
+}
+
+.box:nth-child(3) h2 {
+  color: #c1e7ff; /* Softer Diamond blue */
+}
+
+.box:nth-child(4) h2 {
+  color: #ff7043; /* Softer Bags orange */
+}
+
+/* Responsive Design - Make sure it's mobile-friendly */
+@media (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+}

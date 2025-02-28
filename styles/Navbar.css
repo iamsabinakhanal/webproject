@@ -1,28 +1,67 @@
-/* src/styles/Navbar.css */
+/* Basic styles for the Navbar
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   background-color: #333;
   color: white;
 }
 
-.navbar .logo img {
-  height: 50px; /* Adjust the height as needed */
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.navbar .nav-links a {
+.navbar-logo a {
+  font-size: 24px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.navbar .nav-links a:hover {
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links a:hover {
   text-decoration: underline;
 }
+
+.navbar-auth a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-auth a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-auth {
+    margin-top: 10px;
+  }
+} */
