@@ -21,17 +21,17 @@
   max-width:1200px;
   background-size: cover;
   background-position: center;
-  height: 300px; /* Adjust height as needed */
+  height: 500px; /* Adjust height as needed */
   margin-bottom: 40px; /* Space between the image and title */
 }
 
 .image-box img {
   width: 100%;
   height: 100%;
-  align-items: center;
-  background-position: center;
+  align-items:center;
+  background-position:bottom;
   background-size: cover;
-  object-fit: cover; /* Ensures the image fills the area without stretching */
+  object-fit:cover;/*Ensures the image fills the area without stretching */
   border-radius: 10px; /* Slight rounding for the image */
 }
 

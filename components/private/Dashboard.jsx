@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
 import '../../styles/Dashboard.css';
-import Crown2 from '../../assets/images/Crown2.jpg';  // Importing the image
+import Crown2 from'../../assets/images/Crown2.jpg';  // Importing the image
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
       {/* Horizontal Box for Image */}
       <div className="image-box">
-        <img src={Crown2} alt="Accessories" />  {/* Use the imported image */}
+        <img src={Crown2}  alt="Accessories" />  {/* Use the imported image */}
       </div>
 
       <h1>Rent Now Pay Later</h1>
@@ -33,7 +33,7 @@ const Dashboard = () => {
 
         {/* Diamonds Box */}
         <div className="box">
-          <Link to="/diamonds">
+          <Link to="/diamond">
             <h2>Diamonds</h2>
           </Link>
           <p>Check out our premium diamond collection available for rental.</p>
@@ -47,27 +47,9 @@ const Dashboard = () => {
           <p>View our stylish bag rental collection.</p>
         </div>
 
-        {/* Additional accessory items */}
-        <div className="box">
-          <Link to="/watches">
-            <h2>Watches</h2>
-          </Link>
-          <p>Discover elegant watches for every occasion, now available for rent.</p>
-        </div>
+        
 
-        <div className="box">
-          <Link to="/necklaces">
-            <h2>Necklaces</h2>
-          </Link>
-          <p>Explore our range of stunning necklaces perfect for any event.</p>
-        </div>
-
-        <div className="box">
-          <Link to="/earrings">
-            <h2>Earrings</h2>
-          </Link>
-          <p>Rent beautiful earrings to complete your look.</p>
-        </div>
+        
       </div>
     </div>
   );
